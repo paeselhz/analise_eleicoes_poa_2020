@@ -1,0 +1,13 @@
+name: analise_eleicoes_poa_2020
+title: analise_eleicoes_poa_2020
+username:
+account: paese
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3295663
+bundleId: 3900731
+url: https://paese.shinyapps.io/analise_eleicoes_poa_2020/
+when: 1606240274.52099
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: data/votacoes_poa_2020_1_turno.rds|functions/batch_geocoder.R
