@@ -1,39 +1,34 @@
 shinyUI(
   fluidPage(
-    h1("Analise das eleições Municipais de Porto Alegre - 2020 - 1 Turno"),
-    br(),
-    column(
-      3,
-      pickerInput(
-        inputId = "select_voting_level",
-        label = "Selecione o tipo de eleição: ",
-        choices = votacao_poa %>% 
-          dplyr::pull(ds_cargo) %>% 
-          unique(),
-        selected = "PREFEITO"
-      ),
-      selectizeInput(
-        inputId = "select_candidate",
-        label = "Selecione o Candidato",
-        choices = "",
-        selected = ""
-      ),
-      pickerInput(
-        inputId = "selected_zone",
-        label = "Selecione a zona para analisar: ",
-        choices = votacao_poa %>% 
-          dplyr::pull(nr_zona) %>% 
-          unique(),
-        selected = 1
-      ),
-      dataTableOutput("total_votos_zonas")
+    ##-- Favicon ----
+    tags$head(
+      tags$link(rel = "shortcut icon", href = "img/logo.ico"),
+      #-- biblio js ----
+      tags$link(rel="stylesheet", type = "text/css",
+                href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"),
+      tags$link(rel="stylesheet", type = "text/css",
+                href = "https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro")
     ),
-    column(
-      9,
-      leafletOutput("map_votos_secao",
-                    height = "600px"),
-      dataTableOutput("tabela_votos_secao")
-      # textOutput("tabela_votos_secao")
+    ##-- Logo ----
+    list(tags$head(HTML('<link rel="icon", href="img/icon.png",
+                        type="image/png" />'))),
+    div(style="padding: 1px 0px; width: '100%'",
+        titlePanel(
+          title="", windowTitle = "Análise Eleições POA"
+        )
+    ),
+    theme = "styles.css",
+    # theme = shinythemes::shinytheme("lumen"),
+    navbarPage(
+      title = "",
+      id = "navbar",
+      theme = "styles.css",
+      selected = "home",
+      fluid = TRUE,
+      home_ui,
+      candidatos_ui,
+      bairros_ui,
+      sobre
     )
   )
 )

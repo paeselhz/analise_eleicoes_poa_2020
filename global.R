@@ -1,8 +1,23 @@
 library(DT)
+library(sf)
 library(shiny)
 library(dplyr)
 library(leaflet)
+library(highcharter)
 library(shinyWidgets)
+
+btn_landing <-
+  function(texto, cor, id) {
+    HTML(
+      paste0(
+        '<a id="', id,'" href="#" class="action-button">
+                  <div class = "tab-block-landing tab-block" style = "background-color:', cor, ';"> 
+                  <span class = "name">', texto, '</span>
+                  </div>
+        </a>'
+      )
+    )
+  }
 
 zona_secoes_geoloc <-
   readr::read_rds('data/zona_secoes_geolocalizada.rds') %>% 
@@ -34,3 +49,19 @@ zona_secoes_geoloc <-
 votacao_poa <-
   # readr::read_rds('data/votacoes_poa_2020_1_turno.rds')
   readr::read_rds('data/votacoes_poa_2020_1_turno_smaller.rds')
+
+ui_files <-
+  list.files(
+    path = "tabs",
+    pattern = "*_ui",
+    recursive = TRUE,
+    full.names = TRUE
+  )
+
+mapa_bairros_poa <-
+  readr::read_rds("data/mapa_bairros_poa.rds")
+
+sf_secoes_geoloc_bairro <-
+  readr::read_rds("data/zonas_secoes_bairros.rds")
+
+purrr::walk(ui_files, ~source(.x))

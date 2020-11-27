@@ -49,8 +49,8 @@ tbl_localizacoes_zona_secao <-
     get_location_secao_eleitoral
   )
 
-here_app_id <- "8ZUyu4KYphBTLj2Ww8pa"
-here_api_key <- "ZjsVyStvxJM2AM1edGZ7Nxh7QGx2YQ6cM-OgTg3Ol8A"
+here_app_id <- "<HERE_APP_ID>"
+here_api_key <- "<HERE_API_KEY>"
 
 zona_secao_geolocalizada <-
   tbl_localizacoes_zona_secao %>% 

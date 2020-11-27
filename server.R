@@ -1,135 +1,14 @@
 library(shiny)
 shinyServer(function(input, output, session) {
   
-  observe({
-    updateSelectizeInput(
-      session,
-      inputId = "select_candidate",
-      choices = votacao_poa %>%
-        dplyr::filter(ds_cargo == input$select_voting_level) %>%
-        dplyr::pull(nm_votavel) %>%
-        unique()
-    )  
-  })
+  server_files <-
+    list.files(
+      path = "tabs",
+      pattern = "*_server",
+      recursive = TRUE,
+      full.names = TRUE
+    )
   
-  output$map_votos_secao <- renderLeaflet({
-    
-    df_filtered <-
-      votacao_poa %>% 
-      filter(
-        ds_cargo == input$select_voting_level &
-          nm_votavel == input$select_candidate &
-          nr_zona == input$selected_zone
-        # ds_cargo == "PREFEITO" &
-        # nm_votavel == "VOTO NULO"
-      )
-    
-    votos_zona <-
-      df_filtered %>% 
-      group_by(nr_zona) %>% 
-      summarise(qt_votos = sum(qt_votos))
-    
-    votos_secao <-
-      df_filtered %>% 
-      mutate(
-        nr_secao = as.character(nr_secao)
-      ) %>% 
-      group_by(nr_zona, nr_secao) %>% 
-      summarise(qt_votos = sum(qt_votos))
-    
-    zona_eleitoral <-
-      zona_secoes_geoloc %>% 
-      filter(zona == input$selected_zone) %>% 
-      select(colegio, zona, secoes, lat, long) %>% 
-      distinct() %>% 
-      left_join(
-        votos_secao,
-        by = c("zona" = "nr_zona",
-               "secoes" = "nr_secao")
-      ) %>% 
-      group_by(colegio, zona, lat, long) %>% 
-      summarise(
-        qt_votos = sum(qt_votos, na.rm = TRUE)
-      )
-    
-    leaflet(data = zona_eleitoral) %>% 
-      addTiles() %>%
-      addMarkers(layerId = ~paste0(colegio, "|", zona),
-                 lng = ~long,
-                 lat = ~lat, 
-                 popup = ~paste0(
-                   "<h4>", as.character(colegio), "</h4>",
-                   "<h4>Zona: ", as.character(zona), "</h4>",
-                   "<hr>",
-                   "Votos no local: ", as.character(qt_votos)
-                 ),
-                 label = ~as.character(colegio))
-    
-  })
-  
-  click_local_votacao <- eventReactive(input$map_votos_secao_marker_click, {
-    
-    x <- input$map_votos_secao_marker_click # O "_shape_click" é criado internamente pelo leaflet.
-    
-    y <- x$id
-    
-    return(y)
-    
-  })
-  
-  output$tabela_votos_secao <-
-    renderDataTable({
-      
-      local <- unlist(strsplit(click_local_votacao(), "\\|"))
-      
-      lst_secoes <- 
-        zona_secoes_geoloc %>%
-        filter(
-          colegio == local[1] & zona == local[2]
-        ) %>% 
-        dplyr::pull(secoes)
-      
-      df_secao <-
-        votacao_poa %>%
-        filter(
-          # ds_cargo == "PREFEITO" &
-          # nm_votavel == "VOTO NULO" &
-          ds_cargo == input$select_voting_level &
-            nm_votavel == input$select_candidate &
-            nr_zona == local[2] &
-            nr_secao %in% lst_secoes
-        )
-      
-      df_secao %>% 
-        mutate(
-          nr_secao = as.character(nr_secao)
-        ) %>% 
-        left_join(zona_secoes_geoloc,
-                  by = c("nr_zona" = "zona",
-                         "nr_secao" = "secoes")) %>% 
-        select(
-          colegio,
-          nr_zona,
-          nr_secao,
-          qt_votos
-        )
-      
-    })
-  
-  output$total_votos_zonas <-
-    renderDataTable({
-      
-        votacao_poa %>%
-        filter(
-          # ds_cargo == "PREFEITO" &
-          # nm_votavel == "VOTO NULO"
-          ds_cargo == input$select_voting_level &
-            nm_votavel == input$select_candidate
-        ) %>% 
-        group_by(nr_zona) %>% 
-        summarise(qt_votos = sum(qt_votos))
-      
-    })
-  
+  purrr::walk(server_files, ~source(.x, local = TRUE))
   
 })

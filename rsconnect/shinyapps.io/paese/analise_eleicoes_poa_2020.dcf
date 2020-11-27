@@ -5,9 +5,9 @@ account: paese
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3295663
-bundleId: 3900731
+bundleId: 3913489
 url: https://paese.shinyapps.io/analise_eleicoes_poa_2020/
-when: 1606240274.52099
+when: 1606500552.1676
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: data/votacoes_poa_2020_1_turno.rds|functions/batch_geocoder.R
+ignoredFiles: functions/batch_geocoder.R

@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<metadata xml:lang="pt">
+  <Esri>
+    <CreaDate>20170123</CreaDate>
+    <CreaTime>13572700</CreaTime>
+    <ArcGISFormat>1.0</ArcGISFormat>
+    <ArcGISstyle>ISO 19139 Metadata Implementation Specification GML3.2</ArcGISstyle>
+    <SyncOnce>FALSE</SyncOnce>
+    <DataProperties>
+      <itemProps>
+        <itemName Sync="TRUE">Bairros_LC12112_16</itemName>
+        <itemSize Sync="TRUE">5.475</itemSize>
+        <itemLocation>
+          <linkage Sync="FALSE">withheld</linkage>
+          <protocol Sync="TRUE">Local Area Network</protocol>
+        </itemLocation>
+        <nativeExtBox>
+          <westBL Sync="TRUE">271062.949100</westBL>
+          <eastBL Sync="TRUE">298191.962900</eastBL>
+          <southBL Sync="TRUE">1650035.887400</southBL>
+          <northBL Sync="TRUE">1687546.462300</northBL>
+          <exTypeCode Sync="TRUE">1</exTypeCode>
+        </nativeExtBox>
+        <imsContentType Sync="TRUE" export="False">002</imsContentType>
+      </itemProps>
+      <coordRef>
+        <type Sync="TRUE">Projected</type>
+        <geogcsn Sync="TRUE">GCS_SIRGAS_2000</geogcsn>
+        <csUnits Sync="TRUE">Linear Unit: Meter (1.000000)</csUnits>
+        <projcsn Sync="TRUE">Transversa de Mercator para Porto Alegre (TM-POA)</projcsn>
+        <peXml Sync="TRUE">&lt;ProjectedCoordinateSystem xsi:type='typens:ProjectedCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.3'&gt;&lt;WKT&gt;PROJCS[&amp;quot;Transversa de Mercator para Porto Alegre (TM-POA)&amp;quot;,GEOGCS[&amp;quot;GCS_SIRGAS_2000&amp;quot;,DATUM[&amp;quot;D_SIRGAS_2000&amp;quot;,SPHEROID[&amp;quot;GRS_1980&amp;quot;,6378137.0,298.257222101]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433]],PROJECTION[&amp;quot;Transverse_Mercator&amp;quot;],PARAMETER[&amp;quot;False_Easting&amp;quot;,300000.0],PARAMETER[&amp;quot;False_Northing&amp;quot;,5000000.0],PARAMETER[&amp;quot;Central_Meridian&amp;quot;,-51.0],PARAMETER[&amp;quot;Scale_Factor&amp;quot;,0.999995],PARAMETER[&amp;quot;Latitude_Of_Origin&amp;quot;,0.0],UNIT[&amp;quot;Meter&amp;quot;,1.0]]&lt;/WKT&gt;&lt;XOrigin&gt;-5323100&lt;/XOrigin&gt;&lt;YOrigin&gt;-5002100&lt;/YOrigin&gt;&lt;XYScale&gt;450265407.00157917&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;0.001&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;/ProjectedCoordinateSystem&gt;</peXml>
+      </coordRef>
+    </DataProperties>
+    <SyncDate>20170207</SyncDate>
+    <SyncTime>10554400</SyncTime>
+    <ModDate>20170207</ModDate>
+    <ModTime>10560200</ModTime>
+    <locales>
+      <locale language="por" country="BR" />
+    </locales>
+    <scaleRange>
+      <minScale>50000</minScale>
+      <maxScale>5000</maxScale>
+    </scaleRange>
+    <ArcGISProfile>NAP</ArcGISProfile>
+  </Esri>
+  <mdChar>
+    <CharSetCd value="004" />
+  </mdChar>
+  <dataIdInfo>
+    <idCitation>
+      <resTitle Sync="FALSE">Limites dos Bairros do Município de Porto Alegre</resTitle>
+      <presForm>
+        <fgdcGeoform>vector digital data</fgdcGeoform>
+        <PresFormCd value="005" Sync="TRUE" />
+      </presForm>
+      <date>
+        <pubDate>2017-01-30T00:00:00</pubDate>
+        <reviseDate>2017-01-30T00:00:00</reviseDate>
+      </date>
+      <citRespParty>
+        <rpIndName>Unidade de Monitoramento do Desenvolvimento Urbano (UMDU)</rpIndName>
+        <rpOrgName>Secretaria Municipal de Urbanismo (SMUrb) de Porto Alegre - RS</rpOrgName>
+        <role>
+          <RoleCd value="003" />
+        </role>
+      </citRespParty>
+    </idCitation>
+    <idPurp>Representação vetorial dos limites de bairros de Porto Alegre.</idPurp>
+    <idAbs>&lt;DIV STYLE="text-align:Left;"&gt;&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;&lt;SPAN&gt;Representação vetorial dos limites de bairros de Porto Alegre, definidos pela Lei Nº 12.112, de 22 de agosto de 2016. De acordo com o Art. 2º desta lei, o limite individual de cada bairro é representado através de redação descritiva padronizada e espacialização gráfica georreferenciada, sendo considerados os seguintes referenciais:&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;I - eixo central da via (eixo de logradouros), quando se tratar de sistema viário (avenida, rua, estrada, travessa, beco e outros);&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;II - eixo central do leito ou talvegue, quando se tratar do Rio Gravataí e de arroios;&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;III - margem ou orla, quando se tratar do Lago Guaíba;&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;IV - coordenadas georreferenciadas, quando se tratar de torre de alta tensão e sempre que necessária a sua utilização; &lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;V - limite de propriedade, preferencialmente de uso institucional, na ausência dos elementos físicos citados nos incs. I a IV;&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;VI - linha reta e imaginária, com uma ou ambas as extremidades definidas por coordenadas georreferenciadas, na ausência das situações dos incs. I a V.&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN /&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN STYLE="font-style:italic;"&gt;Escala &lt;/SPAN&gt;&lt;SPAN STYLE="font-style:italic;"&gt;do aerolevantamento base&lt;/SPAN&gt;&lt;SPAN STYLE="font-style:italic;"&gt;: 1:1000&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN STYLE="font-style:italic;"&gt;Observação quanto ao Sistema Geodésico de Referência e à Projeção Cartográfica utilizada:&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN STYLE="font-style:italic;"&gt;O Decreto Municipal n° 18.315/13 estabelece que os trabalhos de delimitação e demarcação de terras, de topografia e cartografia realizadas e/ou contratados por Órgãos da Administração Municipal Direta ou Indireta, bem como os projetos relacionados a essas atividades, que dependam de exame, aprovação ou controle desses Órgãos, devam estar referenciados ao Sistema Geodésico de Referência SIRGAS2000 e suas coordenadas representadas na Projeção Transversa de Mercator para Porto Alegre (TM-POA).&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN STYLE="font-style:italic;"&gt;Para maiores informações sobre características e parâmetros de transformação, acessar: &lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;A href="http://www2.portoalegre.rs.gov.br/spm/default.php?p_secao=345"&gt;&lt;SPAN&gt;http://www2.portoalegre.rs.gov.br/spm/default.php?p_secao=345&lt;/SPAN&gt;&lt;/A&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN /&gt;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;</idAbs>
+    <idCredit>Unidade de Monitoramento do Desenvolvimento Urbano (UMDU)
+Secretaria Municipal de Urbanismo (SMUrb)
+Porto Alegre/RS - Brasil</idCredit>
+    <searchKeys>
+      <keyword>Bairros</keyword>
+      <keyword>Bairros Vigentes</keyword>
+      <keyword>Limites de Bairros</keyword>
+      <keyword>Urbanismo</keyword>
+      <keyword>Porto Alegre.</keyword>
+    </searchKeys>
+    <dataChar>
+      <CharSetCd value="004" />
+    </dataChar>
+    <idPoC>
+      <rpIndName>Unidade de Geoprocessamento e Sensoriamento Remoto Aplicado</rpIndName>
+      <rpOrgName>Secretaria Municipal de Urbanismo (SMUrb) de Porto Alegre - RS</rpOrgName>
+      <role>
+        <RoleCd value="010" />
+      </role>
+      <displayName>Unidade de Geoprocessamento e Sensoriamento Remoto Aplicado</displayName>
+    </idPoC>
+    <resMaint>
+      <maintFreq>
+        <MaintFreqCd value="009" />
+      </maintFreq>
+      <maintCont>
+        <rpIndName>Unidade de Geoprocessamento e Sensoriamento Remoto Aplicado</rpIndName>
+        <rpOrgName>Secretaria Municipal de Urbanismo (SMUrb) de Porto Alegre - RS</rpOrgName>
+        <role>
+          <RoleCd value="010" />
+        </role>
+        <displayName>Unidade de Geoprocessamento e Sensoriamento Remoto Aplicado</displayName>
+      </maintCont>
+      <maintCont>
+        <rpIndName>Unidade de Monitoramento do Desenvolvimento Urbano (UMDU)</rpIndName>
+        <rpOrgName>Secretaria Municipal de Urbanismo (SMUrb) de Porto Alegre - RS</rpOrgName>
+        <role>
+          <RoleCd value="003" />
+        </role>
+        <editorSave>False</editorSave>
+        <displayName>Unidade de Monitoramento do Desenvolvimento Urbano (UMDU)</displayName>
+      </maintCont>
+    </resMaint>
+    <resConst>
+      <SecConsts>
+        <class>
+          <ClasscationCd value="001" />
+        </class>
+      </SecConsts>
+    </resConst>
+    <resConst>
+      <Consts>
+        <useLimit>&lt;DIV STYLE="text-align:Left;"&gt;&lt;DIV&gt;&lt;DIV&gt;&lt;P&gt;&lt;SPAN&gt;Não recomendado o uso para projetos arquitetônicos executivos, ou outros que exijam alta precisão geométrica.&lt;/SPAN&gt;&lt;/P&gt;&lt;/DIV&gt;&lt;/DIV&gt;&lt;/DIV&gt;</useLimit>
+      </Consts>
+    </resConst>
+    <envirDesc Sync="TRUE">Microsoft Windows 7 Version 6.1 (Build 7601) Service Pack 1; Esri ArcGIS 10.3.1.4959</envirDesc>
+    <dataLang>
+      <languageCode value="por" Sync="TRUE" />
+      <countryCode value="BRA" Sync="TRUE" />
+    </dataLang>
+    <spatRpType>
+      <SpatRepTypCd value="001" Sync="TRUE" />
+    </spatRpType>
+    <dataExt>
+      <geoEle>
+        <GeoBndBox esriExtentType="search">
+          <exTypeCode Sync="TRUE">1</exTypeCode>
+          <westBL Sync="TRUE">-51.300724</westBL>
+          <eastBL Sync="TRUE">-51.018726</eastBL>
+          <northBL Sync="TRUE">-29.930709</northBL>
+          <southBL Sync="TRUE">-30.269428</southBL>
+        </GeoBndBox>
+      </geoEle>
+    </dataExt>
+    <idPoC>
+      <rpIndName>Unidade de Monitoramento do Desenvolvimento Urbano (UMDU)</rpIndName>
+      <rpOrgName>Secretaria Municipal de Urbanismo (SMUrb) de Porto Alegre - RS</rpOrgName>
+      <role>
+        <RoleCd value="003" />
+      </role>
+      <displayName>Unidade de Monitoramento do Desenvolvimento Urbano (UMDU)</displayName>
+    </idPoC>
+    <tpCat>
+      <TopicCatCd value="010" />
+    </tpCat>
+    <tpCat>
+      <TopicCatCd value="015" />
+    </tpCat>
+    <tpCat>
+      <TopicCatCd value="003" />
+    </tpCat>
+    <tpCat>
+      <TopicCatCd value="013" />
+    </tpCat>
+    <tpCat>
+      <TopicCatCd value="016" />
+    </tpCat>
+  </dataIdInfo>
+  <mdMaint>
+    <maintFreq>
+      <MaintFreqCd value="009" />
+    </maintFreq>
+    <maintCont>
+      <rpIndName>Unidade de Geoprocessamento e Sensoriamento Remoto Aplicado</rpIndName>
+      <rpOrgName>Secretaria Municipal de Urbanismo (SMUrb) de Porto Alegre - RS</rpOrgName>
+      <role>
+        <RoleCd value="003" />
+      </role>
+      <displayName>Unidade de Geoprocessamento e Sensoriamento Remoto Aplicado</displayName>
+    </maintCont>
+  </mdMaint>
+  <mdConst>
+    <SecConsts>
+      <class>
+        <ClasscationCd value="001" />
+      </class>
+    </SecConsts>
+  </mdConst>
+  <dataSetFn>
+    <OnFunctCd value="001" />
+  </dataSetFn>
+  <eainfo>
+    <detailed Name="Bairros_LC12112_16">
+      <enttyp>
+        <enttypl Sync="TRUE">Bairros_LC12112_16</enttypl>
+        <enttypt Sync="TRUE">Feature Class</enttypt>
+        <enttypc Sync="TRUE">122</enttypc>
+      </enttyp>
+      <attr>
+        <attrlabl Sync="TRUE">FID</attrlabl>
+        <attalias Sync="TRUE">FID</attalias>
+        <attrtype Sync="TRUE">OID</attrtype>
+        <attwidth Sync="TRUE">4</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+        <attrdef Sync="TRUE">Internal feature number.</attrdef>
+        <attrdefs Sync="TRUE">Esri</attrdefs>
+        <attrdomv>
+          <udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">Shape</attrlabl>
+        <attalias Sync="TRUE">Shape</attalias>
+        <attrtype Sync="TRUE">Geometry</attrtype>
+        <attwidth Sync="TRUE">0</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+        <attrdef Sync="TRUE">Feature geometry.</attrdef>
+        <attrdefs Sync="TRUE">Esri</attrdefs>
+        <attrdomv>
+          <udom Sync="TRUE">Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">OBJECTID</attrlabl>
+        <attalias Sync="TRUE">OBJECTID</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">10</attwidth>
+        <atprecis Sync="TRUE">10</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">CODIGO</attrlabl>
+        <attalias Sync="TRUE">CODIGO</attalias>
+        <attrtype Sync="TRUE">Integer</attrtype>
+        <attwidth Sync="TRUE">10</attwidth>
+        <atprecis Sync="TRUE">10</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">NOME</attrlabl>
+        <attalias Sync="TRUE">NOME</attalias>
+        <attrtype Sync="TRUE">String</attrtype>
+        <attwidth Sync="TRUE">20</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">EDITOR</attrlabl>
+        <attalias Sync="TRUE">EDITOR</attalias>
+        <attrtype Sync="TRUE">String</attrtype>
+        <attwidth Sync="TRUE">30</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">DATA_EDICA</attrlabl>
+        <attalias Sync="TRUE">DATA_EDICA</attalias>
+        <attrtype Sync="TRUE">Date</attrtype>
+        <attwidth Sync="TRUE">8</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">GEOM_AREA</attrlabl>
+        <attalias Sync="TRUE">GEOM_AREA</attalias>
+        <attrtype Sync="TRUE">Double</attrtype>
+        <attwidth Sync="TRUE">19</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+      <attr>
+        <attrlabl Sync="TRUE">GEOM_LEN</attrlabl>
+        <attalias Sync="TRUE">GEOM_LEN</attalias>
+        <attrtype Sync="TRUE">Double</attrtype>
+        <attwidth Sync="TRUE">19</attwidth>
+        <atprecis Sync="TRUE">0</atprecis>
+        <attscale Sync="TRUE">0</attscale>
+      </attr>
+    </detailed>
+  </eainfo>
+  <mdLang>
+    <languageCode value="por" Sync="TRUE" />
+    <countryCode value="BRA" Sync="TRUE" />
+  </mdLang>
+  <distInfo>
+    <distFormat>
+      <formatName Sync="TRUE">Shapefile</formatName>
+    </distFormat>
+    <distTranOps>
+      <transSize Sync="TRUE">5.475</transSize>
+    </distTranOps>
+  </distInfo>
+  <mdHrLv>
+    <ScopeCd value="005" Sync="TRUE" />
+  </mdHrLv>
+  <mdHrLvName Sync="TRUE">dataset</mdHrLvName>
+  <refSysInfo>
+    <RefSystem>
+      <refSysID>
+        <identCode code="0" Sync="TRUE" />
+      </refSysID>
+    </RefSystem>
+  </refSysInfo>
+  <spatRepInfo>
+    <VectSpatRep>
+      <geometObjs Name="Bairros_LC12112_16">
+        <geoObjTyp>
+          <GeoObjTypCd value="002" Sync="TRUE" />
+        </geoObjTyp>
+        <geoObjCnt Sync="TRUE">122</geoObjCnt>
+      </geometObjs>
+      <topLvl>
+        <TopoLevCd value="001" Sync="TRUE" />
+      </topLvl>
+    </VectSpatRep>
+  </spatRepInfo>
+  <spdoinfo>
+    <ptvctinf>
+      <esriterm Name="Bairros_LC12112_16">
+        <efeatyp Sync="TRUE">Simple</efeatyp>
+        <efeageom code="4" Sync="TRUE" />
+        <esritopo Sync="TRUE">FALSE</esritopo>
+        <efeacnt Sync="TRUE">122</efeacnt>
+        <spindex Sync="TRUE">TRUE</spindex>
+        <linrefer Sync="TRUE">FALSE</linrefer>
+      </esriterm>
+    </ptvctinf>
+  </spdoinfo>
+  <mdDateSt Sync="TRUE">20170207</mdDateSt>
+  <mdFileID>BAIRROS_VIG</mdFileID>
+  <Binary>
+    <Thumbnail>
+      <Data EsriPropertyType="PictureX">/9j/4AAQSkZJRgABAQEAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0a
+HBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIy
+MjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCACFAMgDASIA
+AhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQA
+AAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3
+ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWm
+p6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEA
+AwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSEx
+BhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElK
+U1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3
+uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3+iii
+gAooooAKKKKACimSyLDC8rZKopY4GTgVn3zm6iEDs9tGzDcxkCswHYYP5/1qJ1IwV5MaVy4l5A6b
+yxjGSP3qGMn8GANTAhgCCCDyCK54XVhbtvtdRjkkLHKeYJN/fBxkjr17e9X9OuoZ3WW2P7mbcGX+
+6468dj1z9BXPTxXNLlta43E06KKK6yQooqGS6giKB5VXfnHPHBwf1IH40ATUUgIIyCCPaloAKKKK
+ACiiigAooooAKKKKACiiigAooooAKKKKACiiigBGUOpVgCpGCD3FZkthBBeCdkEglIQmQ7ihxxgn
+oD/M+9alNkjWWNo3GVYYIrOrTVSLixp2Mu5ubcK8EtrNKF/gFuzq3pg4xWZZqpa7NvIkLFwrmLI8
+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</Data>
+    </Thumbnail>
+  </Binary>
+  <mdContact>
+    <rpIndName>Unidade de Monitoramento do Desenvolvimento Urbano (UMDU)</rpIndName>
+    <rpOrgName>Secretaria Municipal de Urbanismo (SMUrb) de Porto Alegre - RS</rpOrgName>
+    <role>
+      <RoleCd value="003" />
+    </role>
+    <displayName>Unidade de Monitoramento do Desenvolvimento Urbano (UMDU)</displayName>
+  </mdContact>
+  <mdContact>
+    <rpIndName>Unidade de Geoprocessamento e Sensoriamento Remoto Aplicado</rpIndName>
+    <rpOrgName>Secretaria Municipal de Urbanismo (SMUrb) de Porto Alegre - RS</rpOrgName>
+    <role>
+      <RoleCd value="010" />
+    </role>
+    <displayName>Unidade de Geoprocessamento e Sensoriamento Remoto Aplicado</displayName>
+    <displayName>Unidade de Geoprocessamento e Sensoriamento Remoto Aplicado</displayName>
+  </mdContact>
+</metadata>
