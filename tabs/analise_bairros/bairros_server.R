@@ -30,6 +30,16 @@ is_bairros <-
   })
 
 
+output$titulo_mapa_bairros <-
+  renderUI({
+    
+    HTML(paste0("<h4><center><strong>Mapa da votação para prefeito no ", 
+                input$select_voting_turn_bairros, "º Turno",
+                "</strong></center></h4>")
+    )
+    
+  })
+
 output$mapa_bairros_filtro <-
   renderLeaflet({
     
@@ -40,7 +50,8 @@ output$mapa_bairros_filtro <-
       ) %>% 
       right_join(
         votacao_poa %>% 
-          filter(ds_cargo == "PREFEITO") %>% 
+          filter(ds_cargo == "PREFEITO" &
+                   nr_turno == input$select_voting_turn_bairros) %>% 
           mutate(
             nr_secao = as.character(nr_secao)
           ),
@@ -87,7 +98,18 @@ output$mapa_bairros_filtro <-
                     "<h4>", as.character(NOME), "</h4>",
                     "<hr>",
                     "<h4>Candidato a prefeito mais votado: <br>", stringr::str_to_title(nm_votavel), "</h4>"
-                  ))
+                  )) %>% 
+      addLegend(
+        position = "bottomleft",
+        labels = 
+          c(
+            "MANUELA PINTO VIEIRA D AVILA",
+            "NELSON MARCHEZAN JÚNIOR",
+            "SEBASTIÃO DE ARAÚJO MELO",
+            "Não existem urnas nesse bairro."
+          ),
+        colors = c("red", "blue", "green", "grey")
+      )
     
     
   })
@@ -120,7 +142,8 @@ output$hchart_votos_prefeito <-
         ) %>% 
         right_join(
           votacao_poa %>% 
-            filter(ds_cargo == "PREFEITO") %>% 
+            filter(ds_cargo == "PREFEITO" &
+                     nr_turno == input$select_voting_turn_bairros) %>% 
             mutate(
               nr_secao = as.character(nr_secao)
             ),
@@ -166,7 +189,8 @@ output$hchart_votos_prefeito <-
         ) %>% 
         right_join(
           votacao_poa %>% 
-            filter(ds_cargo == "PREFEITO") %>% 
+            filter(ds_cargo == "PREFEITO" &
+                     nr_turno == input$select_voting_turn_bairros) %>% 
             mutate(
               nr_secao = as.character(nr_secao)
             ),

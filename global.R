@@ -48,7 +48,8 @@ zona_secoes_geoloc <-
 
 votacao_poa <-
   # readr::read_rds('data/votacoes_poa_2020_1_turno.rds')
-  readr::read_rds('data/votacoes_poa_2020_1_turno_smaller.rds')
+  # readr::read_rds('data/votacoes_poa_2020_1_turno_smaller.rds')
+  readr::read_rds('data/votacoes_poa_2020_smaller.rds')
 
 ui_files <-
   list.files(

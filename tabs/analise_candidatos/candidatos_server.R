@@ -30,20 +30,23 @@ is_candidatos <-
   })
 
 observe({
-  updateSelectizeInput(
+  updatePickerInput(
     session,
-    inputId = "select_candidate",
-    choices = votacao_poa %>%
-      dplyr::filter(ds_cargo == input$select_voting_level) %>%
-      dplyr::pull(nm_votavel) %>%
+    inputId = "select_voting_level",
+    choices = votacao_poa %>% 
+      dplyr::filter(nr_turno == input$select_voting_turn) %>% 
+      dplyr::pull(ds_cargo) %>% 
       unique()
-  ) 
-  
+  )
+})
+
+observe({
   updatePickerInput(
     session,
     inputId = "select_candidate",
     choices = votacao_poa %>%
-      dplyr::filter(ds_cargo == input$select_voting_level) %>%
+      dplyr::filter(ds_cargo == input$select_voting_level &
+                      nr_turno == input$select_voting_turn) %>%
       dplyr::pull(nm_votavel) %>%
       unique()
   ) 
@@ -56,7 +59,8 @@ output$map_votos_secao <- renderLeaflet({
     filter(
       ds_cargo == input$select_voting_level &
         nm_votavel == input$select_candidate &
-        nr_zona == input$selected_zone
+        nr_zona == input$selected_zone &
+        nr_turno == input$select_voting_turn
       # ds_cargo == "PREFEITO" &
       # nm_votavel == "VOTO NULO"
     )
@@ -132,7 +136,8 @@ output$tabela_votos_secao <-
         filter(
           ds_cargo == input$select_voting_level &
             nm_votavel == input$select_candidate &
-            nr_zona == input$selected_zone
+            nr_zona == input$selected_zone &
+            nr_turno == input$select_voting_turn
         )
       
       df_secao %>% 
@@ -167,6 +172,7 @@ output$tabela_votos_secao <-
           # nm_votavel == "VOTO NULO" &
           ds_cargo == input$select_voting_level &
             nm_votavel == input$select_candidate &
+            nr_turno == input$select_voting_turn &
             nr_zona == local[2] &
             nr_secao %in% lst_secoes
         )
@@ -202,7 +208,8 @@ output$total_votos_zonas <-
         # ds_cargo == "PREFEITO" &
         # nm_votavel == "VOTO NULO"
         ds_cargo == input$select_voting_level &
-          nm_votavel == input$select_candidate
+          nm_votavel == input$select_candidate &
+          nr_turno == input$select_voting_turn
       ) %>% 
       group_by(nr_zona) %>% 
       summarise(qt_votos = sum(qt_votos)) %>% 

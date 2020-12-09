@@ -3,7 +3,7 @@ home_ui <-
     title = "Home",
     value = "home",
     hr(),
-    HTML("<h1><center><strong>Análise das Eleições de Porto Alegre - 2020 - 1º Turno</strong></center></h1>"),
+    HTML("<h1><center><strong>Análise das Eleições de Porto Alegre - 2020</strong></center></h1>"),
     br(), br(), br(), br(),
     column(width = 2),
     column(width = 4,

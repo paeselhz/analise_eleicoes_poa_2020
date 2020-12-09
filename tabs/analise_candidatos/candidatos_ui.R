@@ -5,6 +5,14 @@ candidatos_ui <-
     HTML("<h1><center><strong>Análise individual dos candidatos</strong></center></h1>"),
     column(
       3,
+      awesomeRadio(
+        inputId = "select_voting_turn",
+        label = "Turno de votação", 
+        choices = c("1º Turno" = 1, 
+                    "2º Turno" = 2),
+        selected = 1,
+        inline = TRUE
+      ),
       pickerInput(
         inputId = "select_voting_level",
         label = "Selecione o tipo de eleição: ",
@@ -37,11 +45,13 @@ candidatos_ui <-
       9,
       column(
         6,
+        HTML("<h4><center><strong>Localização dos locais de votação</strong></center></h4>"),
         leafletOutput("map_votos_secao",
                         height = "600px")
       ),
       column(
         6, 
+        HTML("<h4><center><strong>Votos feitos pelo candidato selecionado:</strong></center></h4>"),
         dataTableOutput("tabela_votos_secao")  
       )
     )
